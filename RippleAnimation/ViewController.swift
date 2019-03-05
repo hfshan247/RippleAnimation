@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var animation1 = RippleAnimation();
+    var animation1 = RippleAnimationEaseInEaseOut();
     
     @IBOutlet private weak var imageView_1:UIImageView!
     

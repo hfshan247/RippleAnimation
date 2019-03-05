@@ -17,7 +17,7 @@ enum AnimationEffect {
     case EaseInEaseOut
 }
 
-class RippleAnimation {
+class RippleAnimationEaseInEaseOut {
     var uiview: UIImageView?
     var color: CGColor?
     var repetetion: Int?
