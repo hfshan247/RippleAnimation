@@ -43,17 +43,17 @@ class RippleAnimation {
     private func getEffect() -> CAMediaTimingFunctionName{
         switch effect {
         case .Linear?:
-            return CAMediaTimingFunctionName.linear as CAMediaTimingFunctionName;
+            return CAMediaTimingFunctionName.linear;
         case .EaseIn?:
-            return CAMediaTimingFunctionName.easeIn as CAMediaTimingFunctionName;
+            return CAMediaTimingFunctionName.easeIn ;
         case .EaseOut?:
-            return CAMediaTimingFunctionName.easeOut as CAMediaTimingFunctionName;
+            return CAMediaTimingFunctionName.easeOut;
         case .EaseInEaseOut?:
-            return CAMediaTimingFunctionName.easeInEaseOut as CAMediaTimingFunctionName;
+            return CAMediaTimingFunctionName.easeInEaseOut;
         case .Default?:
-            return CAMediaTimingFunctionName.default as CAMediaTimingFunctionName;
+            return CAMediaTimingFunctionName.default;
         default:
-            return CAMediaTimingFunctionName.default as CAMediaTimingFunctionName;
+            return CAMediaTimingFunctionName.default;
         }
     }
     
