@@ -43,17 +43,17 @@ class RippleAnimation {
     private func getEffect() -> CAMediaTimingFunctionName{
         switch effect {
         case .Linear?:
-            return CAMediaTimingFunctionName.linear;
+            return kCAMediaTimingFunctionLinear as CAMediaTimingFunctionName;
         case .EaseIn?:
-            return CAMediaTimingFunctionName.easeIn ;
+            return kCAMediaTimingFunctionEaseIn as CAMediaTimingFunctionName;
         case .EaseOut?:
-            return CAMediaTimingFunctionName.easeOut;
+            return kCAMediaTimingFunctionEaseOut as CAMediaTimingFunctionName;
         case .EaseInEaseOut?:
-            return CAMediaTimingFunctionName.easeInEaseOut;
+            return kCAMediaTimingFunctionEaseInEaseOut as CAMediaTimingFunctionName;
         case .Default?:
-            return CAMediaTimingFunctionName.default;
+            return kCAMediaTimingFunctionDefault as CAMediaTimingFunctionName;
         default:
-            return CAMediaTimingFunctionName.default;
+            return kCAMediaTimingFunctionDefault as CAMediaTimingFunctionName;
         }
     }
     
@@ -91,7 +91,7 @@ class RippleAnimation {
         
         let animation1 = CAAnimationGroup()
         animation1.animations = [scaleAnim1, opacityAnim]
-        animation1.timingFunction = CAMediaTimingFunction(name: getEffect())
+        animation1.timingFunction = CAMediaTimingFunction(name: getEffect() as String)
         var interval: Double = 1;
         interval = Double(rings!) / timeInterval!
         animation1.duration = CFTimeInterval(interval);
